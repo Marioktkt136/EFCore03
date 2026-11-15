@@ -16,7 +16,7 @@ public class LearningDbContext : DbContext
         optionsBuilder.UseSqlServer(
             "Server=.;Database=OnlineLearningDb;Trusted_Connection=True;TrustServerCertificate=True;");
     }
-
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(LearningDbContext).Assembly);
